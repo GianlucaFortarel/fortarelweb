@@ -5,129 +5,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.  <link href="css/style.css" rel="stylsheet" type="text/css">
 -->
 <html lang="it">
-    <style>
-        body{
-            color:#333;
-            font-size: 90%;
-            test-align: left;
-            background-image: url(img/pattern.jpg); 
-            background-repeat: repeat;
-            width: 80%;
-            margin: 0 auto;
-        }
-        a{
-            color: #333;
-            text-decoration: none;
-        }
-        a:hover{
-            color: #F30;  
-        }
-       
-        .mainheader img{
-            width: 50%;
-            hieght: auto;
-            margin: 2% 0;
-        }
-        
-        .mainheader nav{
-            background-color: #FFF;
-            height: 37px;
-            border-radius:5px;
-            -moz-border-radius:5px;
-            -webkit-border-radius:5px
-        }
-        
-        .mainheader nav ul{
-            list-style: none;
-            margin: 0 auto;
-            
-        } 
-        
-        .mainheader nav ul li{
-            float: left;
-        }
-        
-        .mainheader nav a:link{
-            color: #000;
-            display: inline-block;
-            padding: 10px 25px;
-        }
-        
-        .mainheader nav a:hover{
-            color: #FFF;
-            
-            background-color: #333;
-        }
-        
-        .mainContent{
-            width: 64%;
-            background-color: #FFF;
-            border-radius:5px;
-            -moz-border-radius:5px;
-            -webkit-border-radius:5px;
-            float:left;
-            margin-top: 2%;
-            margin-right: 2%;
-            padding: 2%;
-        }
-        
-        .sidebar{
-            width: 26%;
-            background-color: #FFF;
-            border-radius:5px;
-            -moz-border-radius:5px;
-            -webkit-border-radius:5px;
-            float:left;
-            margin-top: 2%;
-            padding: 2%;
-        }
-        
-        .mainFooter{
-            width: 100%;
-            background-color: #FFF;
-            border-radius:5px;
-            -moz-border-radius:5px;
-            -webkit-border-radius:5px;
-            float:left;
-            text-align: center;
-            margin-top: 2%;
-        }
-        
-        @media only screen and (Min-width:150px) and (max-width:600px)
-            {
-            .body{
-                font-size: 95%;
-            }
-            
-            .mainheader img{
-                width: 100%;
-            }
-            
-            .mainheader nav{
-                height: 148px;
-            }
-            
-            .mainheader nav ul{
-                padding-left: 0;
-            }
-            
-            .mainheader nav ul li{
-                float: left;
-                display: inline-block;
-                width: 100%;
-                text-align: center;
-            }
-            
-            
-            .mainheader nav a:link{
-                display: block; 
-            }
-            
-            .mainContent{
-                width: 96%;
-            }
-            }
-    </style>
     <head>
         <title>layout|resposive theme</title>
         <meta charset="UTF-8">
@@ -234,3 +111,41 @@ and open the template in the editor.  <link href="css/style.css" rel="stylsheet"
         </footer>
     </body>
 </html>
+<!-- div serve per definire una parte del body, senza css non servono a niente
+Le pagine sono divise in due parti:
+   1)Html dove metto il contenuto
+   2)Css dove metto la struttura della mia pagina web, Es: colore, grsndezza, ...
+Per fare si che queste due parti siano colegate posso:
+  - metto un tag e subito dopo metto una parentesi graffa. Es: a{} Finto di scrivere devo chiudere la parentesi graffa.
+  - un altro metodo è quello di mettere il nome della cosa che vado a modicare: hover
+  - la terza opzione è quella di mettere delle classi cosi che posso solamenre mettere il nome della classe per poter modificare tutte le cose che ci sono nella classe Es:<P class="nome">
+    Facendo cosi però ogni p cambiera quindi sarebbe meglio che per ogni p gli do una classe sua
+Tag che permettono di dare la struttura alla pagina, sono: body, header,... che ti dicono com'é fatta la pagina web.
+Body è una classe dove tutto se cambio colore oppure altezza mi cambia da tutte le parti dove si trova body
+hover vuol dire che quando passo sopra con il mouse cambia il colore
+padding= distanza dalla porzione di testo e il contenuto.
+@media only screen serve perché quando rimpiciolisco lo scermo anche le grandezze e le caratteristiche dei testi cambano.
+
+
+STUDIAE PER INTERROGAZIONE
+c:\utente\nome.cognome\desktop questo si chiama persorso associato
+La radice è la cartella dove si trovato i file quindi se questa cartella la spostiamo il percorso non è più quello C:\utenti\nome.cognome\desktop.
+Anche con un sito web si usano i percosi relativi= facciamo finta che parte da cognomeweb(root) dentro questa cartella trovo:
+Quando scrivo i percorsi assoluti uso lo \ metre quando usoi percorsi relativi uo lo slesh /
+Es: cognomeweb/folder/ e all'interno di queste trovo:
+   - CSS ---) style.css
+   - immagini
+   - index.html  file nella root
+   - prova html  file nella root
+Il percorso relativa si usa: non parto più da c perché non è un percorso relativo quindi devo scrivere css
+quindi dovro scrivere css/a_c/style.css es se devo andare nella style
+Posso fare la stessa cosa con index.html e immagini.
+Per colegare dei file devo partire sempre dal folder che è il root.
+Se devo tornare indietro dalla sottocartella ad un altra sottocartella devo:
+Es: cartella sito_di_prova poi ho due sottocartelle una utente el'altra admin
+Da admin devo fare un link per andare nell'utente.
+utente/file_u.html
+per sportarlo bisogna:
+<o href= " .../u/file.html
+se biogna tornare indientro di due posizioni bisogna fare:  ../../
+-->
